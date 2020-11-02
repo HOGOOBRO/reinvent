@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<title>prototype</title>
+<meta charset="utf-8">
+<style>
+body{
+  margin:0;
+  color:navy;
+}
+h1{
+  color:navy;
+  text-align:center;
+  font-size:80px;
+  border-bottom:navy solid 1px;
+  margin:0;
+  padding:20px;
+}
+#grid{
+  display:grid;
+  grid-template-columns:150px 1fr;
+}
+#grid ul{
+  border-right:navy 1px solid;
+  margin:0;
+  padding:20px;
+  color:navy;
+}
+#announcement{
+  padding-left:25px;
+}
+@media(max-width:800px){
+  #grid{
+    display:block;}
+    #grid ul{
+      border-right:none;}
+
+      h1{border-bottom:none;}
+
+      #searchbox{
+        padding-left:5px;
+        padding-right:100px;
+      }
+}
+#searchbox{
+  border:5px navy solid;
+  padding-left:5px;
+  padding-right:500px;
+  font-size:20px;
+  margin-top:150px;
+}
+
+</style>
+</head>
+
+<body>
+<h1>BOX</h1>
+<div id="grid">
+  <ul>
+    <li>home</li>
+    <li>on sale</li>
+    <li>collections</li>
+    <li>categories</li>
+    <li>my page</li>
+  </ul>
+  <div id="announcement">
+    <br><br><br>
+    <img src="think.jpg" width="700">
+    <br>
+<br><br>
+<span id="searchbox">search box</span>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <p>
+  This is the first version of our prototype(about luxurious stuff).
+  </p>
+  </div>
+</div>
+
+
+</body>
+</html>
