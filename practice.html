@@ -54,6 +54,23 @@ h1{
 </head>
 
 <body>
+
+
+  <input type="button" value="night" onclick="
+  var target = document.querySelector('body');
+  if (this.value === 'night'){
+    target.style.backgroundColor='black';
+    target.style.color='navy';
+    this.value='day';
+  }
+  else{
+    target.style.backgroundColor='white';
+    target.style.color='navy';
+    this.value='night';
+
+  }
+
+  ">
 <h1>BOX</h1>
 <div id="grid">
   <ul>
@@ -64,6 +81,7 @@ h1{
     <li>my page</li>
   </ul>
   <div id="announcement">
+
     <br><br><br>
     <img src="think.jpg" width="700">
     <br>
